@@ -10,6 +10,15 @@ a {
   color: #f00;
 }
 
+/* HEADER STYLES */
+.header-nav {
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+}
+
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
