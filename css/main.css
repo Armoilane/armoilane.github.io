@@ -1,4 +1,8 @@
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,8 +13,40 @@ h1 {
 a {
   color: #f00;
 }
+h2 ~ p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
+}
 
 /* HEADER STYLES */
+.header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  left: -30px;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+.header-logo img {
+  width: 4.3vh;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
 .header-nav {
   float: right;
   padding: 5.5vh 60px 0 0;
@@ -19,19 +55,34 @@ a {
   display: inline-block;
   margin-left: 1em;
 }
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 1em;
+}
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #fff;
+}
 
 .header-nav a {
-  color: #000;
+  color: #fff;
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+}
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ed6e2f;
 }
 
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
+  position: relative;
 }
 
 /* SOCIAL STYLES */
@@ -52,10 +103,14 @@ a {
   vertical-align: middle;
   width: 2.5em;
 }
+.social-link:hover {
+  background-color: #ed6e2f;
+}
 .social-list {
   list-style: none;
+  bottom: 0;
   padding: 0;
-  text-align: center;
+  position: absolute;
 }
 .social-list > li {
   display: inline-block;
