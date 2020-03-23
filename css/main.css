@@ -4,7 +4,10 @@ html {
   padding: 0 30px;
 }
 body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 h1 {
   font-size: 7vw;
@@ -25,6 +28,11 @@ h2 ~ p {
   margin: 1em auto 0;
   max-width: 70%;
   text-align: center;
+}
+.content-container {
+  flex-grow: 1;
+  padding-top: 10vh;
+  width: 100%;
 }
 
 /* HEADER STYLES */
@@ -116,7 +124,7 @@ h2 ~ p {
   background-color: #c7dbfc;
   background-size: cover;
   box-sizing: border-box;
-  height: 100vh;
+  height: 90vh;
   padding-top: 10vh;
 }
 .full-hero::after {
