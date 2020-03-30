@@ -1,6 +1,7 @@
 ---
 layout: post
 title: This is the title of the post
+description: A fool is you!
 postHero: https://placekitten.com/g/200/50
 author: Silly Goose
 authorTwitter: https://twitter.com/mhartl
